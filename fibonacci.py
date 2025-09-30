@@ -30,3 +30,7 @@ for i in range(0, int(num)):
 
         output = term1 + term2
     print(output, end=' ')
+
+# Prompt the user for the number of terms.
+# Validate that the input is a positive integer.
+# Use a for loop to print the Fibonacci sequence up to that many terms.
