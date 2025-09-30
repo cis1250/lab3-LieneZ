@@ -1,12 +1,18 @@
 #!/usr/bin/env python3
 
 # Fibonacci Sequence Exercise
+num = -1
+while num <= 0:
+    try:
+        num = int(input("How many Fibonacci terms do you want? "))
+        if (num <= 0):
+            print("Invalid input: please enter a positive integer.")
+        else:
+            continue
+    except ValueError:
+        print("Invalid input: please enter a positive integer.")
 
-num = input("How many Fibonacci terms do you want? ")
 
-while not isinstance(num, int) or num <= 0:
-    print("Invalid input: please enter a positive integer.")
-    num = input("How many Fibonacci terms do you want? ")
 
 num = int(num)
 
@@ -24,7 +30,3 @@ for i in range(0, int(num)):
 
         output = term1 + term2
     print(output, end=' ')
-
-# Prompt the user for the number of terms.
-# Validate that the input is a positive integer.
-# Use a for loop to print the Fibonacci sequence up to that many terms.
